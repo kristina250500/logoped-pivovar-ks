@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const legacySections = {
+    about: "about.html",
+    education: "education.html",
+    services: "services.html",
+    process: "process.html",
+    office: "office.html",
+    route: "route.html",
+    contacts: "contacts.html",
+  };
+  const legacySection = window.location.hash.slice(1);
+  const isHomePage =
+    window.location.pathname.endsWith("/") ||
+    window.location.pathname.endsWith("/index.html");
+
+  if (isHomePage && legacySections[legacySection]) {
+    window.location.replace(legacySections[legacySection]);
+    return;
+  }
+
+  document
+    .querySelector('.site-nav a[aria-current="page"]')
+    ?.scrollIntoView({ block: "nearest", inline: "center" });
+
   const gallery = document.querySelector(".office-gallery");
 
   if (!gallery) {
