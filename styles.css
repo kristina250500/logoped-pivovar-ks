@@ -75,10 +75,3 @@
 .credential-preview{border-right:0;border-bottom:1px solid var(--border)}
 .credential-copy{padding:22px 20px 24px}
 }
-
-/* Multipage navigation */
-body.site-page{min-height:100vh;display:flex;flex-direction:column}
-.site-page main{width:100%;flex:1}
-.site-page:not(.page--home) main{min-height:calc(100vh - 154px)}
-.site-nav a.is-active{color:var(--violet-deep)}
-.site-nav a.is-active:after{transform:scaleX(1)}
