@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const legacySections = {
     about: "about.html",
-    education: "education.html",
+    education: "about.html#education",
     services: "services.html",
-    process: "process.html",
+    process: "services.html#process",
     office: "office.html",
-    route: "route.html",
+    route: "office.html#route",
     contacts: "contacts.html",
   };
   const legacySection = window.location.hash.slice(1);

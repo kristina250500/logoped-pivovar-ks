@@ -79,9 +79,6 @@
 /* Multipage navigation */
 body.site-page{min-height:100vh;display:flex;flex-direction:column}
 .site-page main{width:100%;flex:1}
-.site-page:not(.page--home) main>section{min-height:calc(100vh - 154px)}
+.site-page:not(.page--home) main{min-height:calc(100vh - 154px)}
 .site-nav a.is-active{color:var(--violet-deep)}
 .site-nav a.is-active:after{transform:scaleX(1)}
-@media (width<=600px){
-.site-page:not(.page--home) main>section{min-height:0}
-}
